@@ -1,0 +1,47 @@
+---
+title: "Genghis Khan"
+author: "Shanay Wadhwani"
+format: revealjs
+jupyter:
+  kernel: "myenv"
+---
+---
+
+## Genghis Khan
+
+![Emperor of Mongolia](./images/xyz.jpg)
+
+## Map of Mongolia
+
+![Mongolia](./images/Mongolia_XI.jpg)
+
+### Citation
+
+   @article{Hankin_Watson_1914, title={On the Flight of Pterodactyls}, volume={18}, DOI={10.1017/s2398187300140290}, number={72}, journal={Aeronautical journal (London, England : 1897)}, publisher={Cambridge University Press (CUP)}, author={Hankin, E. H. and Watson, D. M. S.}, year={1914}, month=oct., pages={324–335} }
+
+
+## Python Code Example
+
+Python code cell that generates a plot.
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+
+x = np.linspace(-10, 10)
+y = x
+
+plt.figure(figsize=(8, 8))
+plt.plot(x, y, label='$x = y$', color='blue')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Plot of $x = y$')
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.legend()
+
+
+plt.show()
+```
+
