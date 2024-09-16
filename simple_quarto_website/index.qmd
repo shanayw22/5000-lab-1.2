@@ -2,6 +2,8 @@
 title: "simple_quarto_website"
 toc: true
 toc-depth: 2
+html: 
+    mermaid: true
 ---
 
 # Genghis Khan
@@ -61,10 +63,19 @@ $$
 > 
 > He pillaged the steppes of central Asia in the 12th and 13th centuries.
 >
-> <video width="640" height="480" controls>
+<video width="640" height="480" controls>
   <source src="./images/Why Genghis Khan Tomb will Never be Found (EXPLAINED).mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+
+```{mermaid}
+graph TD;
+    A[Start] --> B{Is it raining?};
+    B -->|Yes| C[carry an umbrella];
+    B -->|No| D[wear shades];
+```
+
 
 
 [^1]: @article{Farrimond_2011, title={Beyond the caveman: Rethinking masculinity in relation to men’s help-seeking}, volume={16}, DOI={10.1177/1363459311403943}, number={2}, journal={Health: An Interdisciplinary Journal for the Social Study of Health, Illness and Medicine}, publisher={SAGE Publications}, author={Farrimond, Hannah}, year={2011}, month=may, pages={208–225} }
